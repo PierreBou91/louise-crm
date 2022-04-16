@@ -9,7 +9,6 @@ export default function SearchInput() {
   function handleSubmit(e) {
     e.preventDefault();
     setSearchState("NOT IMPLEMENTED");
-    console.log(searchState);
   }
 
   function handleChange(e) {
@@ -18,7 +17,12 @@ export default function SearchInput() {
   return (
     <div className={classes.search}>
       <form onSubmit={handleSubmit}>
-        <input value={searchState} onChange={handleChange} />
+        <input
+          type="text"
+          name="search bar"
+          value={searchState}
+          onChange={handleChange}
+        />
         <button type="submit">
           <BsSearch />
         </button>
