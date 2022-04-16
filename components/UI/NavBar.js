@@ -27,7 +27,9 @@ export const NavBar = () => {
           </h1>
         </li>
         {NavBarItems.map((item) => (
-          <NavBarItem href={item.href}>{item.title}</NavBarItem>
+          <NavBarItem key={item.title} href={item.href}>
+            {item.title}
+          </NavBarItem>
         ))}
       </ul>
     </nav>
