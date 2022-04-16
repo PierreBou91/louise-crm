@@ -1,22 +1,22 @@
 import React from "react";
 import { NavBarItem } from "./NavBarItem";
 
-import classes from "../../styles/Header.module.css";
+import classes from "../../styles/Navbar.module.css";
 import Link from "next/link";
 
 const NavBarItems = [
-  { title: "Utilisateurs", href: "/" },
-  { title: "Page personnelle", href: "/" },
-  { title: "Contacts", href: "/" },
-  { title: "Organisations", href: "/" },
-  { title: "Actions", href: "/" },
-  { title: "Modeles", href: "/" },
+  { title: "Utilisateurs", href: "/users" },
+  { title: "Page personnelle", href: "/myactions" },
+  { title: "Contacts", href: "/contacts" },
+  { title: "Organisations", href: "/orgs" },
+  { title: "Actions", href: "/actions" },
+  { title: "Modeles", href: "/models" },
 ];
 
 export const NavBar = () => {
   return (
     <nav>
-      <ul className={classes.header}>
+      <ul className={classes.navlist}>
         <li>
           <h1>
             <Link href="/">

@@ -1,9 +1,11 @@
 import { NavBar } from "./NavBar";
+import SearchInput from "./SearchInput";
 
 const Header = (props) => {
   return (
     <>
-      <NavBar></NavBar>
+      <SearchInput />
+      <NavBar />
     </>
   );
 };
