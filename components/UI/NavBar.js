@@ -2,6 +2,7 @@ import React from "react";
 import { NavBarItem } from "./NavBarItem";
 
 import classes from "../../styles/Header.module.css";
+import Link from "next/link";
 
 const NavBarItems = [
   { title: "Utilisateurs", href: "/" },
@@ -18,9 +19,11 @@ export const NavBar = () => {
       <ul className={classes.header}>
         <li>
           <h1>
-            <a href="/">
-              louise-crm<span>.com</span>
-            </a>
+            <Link href="/">
+              <a>
+                louise-crm<span>.com</span>
+              </a>
+            </Link>
           </h1>
         </li>
         {NavBarItems.map((item) => (

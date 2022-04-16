@@ -1,11 +1,14 @@
 import React from "react";
+import Link from "next/link";
 
 export const NavBarItem = (props) => {
   return (
     <li>
-      <a href={props.href}>
-        <span>{props.children}</span>
-      </a>
+      <Link href={props.href}>
+        <a>
+          <span>{props.children}</span>
+        </a>
+      </Link>
     </li>
   );
 };
